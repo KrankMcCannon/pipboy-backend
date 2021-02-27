@@ -1,0 +1,26 @@
+{
+  "name": "pipboy-backend",
+  "version": "1.0.0",
+  "description": "A cool version of your fallout hub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrankMcCannon/pipboy-backend.git"
+  },
+  "keywords": [
+    "pipboy"
+  ],
+  "author": "KrankMcCannon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrankMcCannon/pipboy-backend/issues"
+  },
+  "homepage": "https://github.com/KrankMcCannon/pipboy-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
