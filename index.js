@@ -38,10 +38,17 @@ app.get("/inv/junk", callbackJunk);
 //ammo
 app.get("/inv/ammo", callbackAmmo);
 
+//import tab data
+const callbackStats = require("./callbackstats");
+
+//stats
+app.get("/data/stats", callbackStats);
+
 app.get("/", (_, res) => {
   res.send(
     '<a href="http://localhost:3000/stat/">stat</a>, ' +
-    '<a href="http://localhost:3000/inv">inv</a>'
+    '<a href="http://localhost:3000/inv">inv</a>, ' +
+    '<a href="http://localhost:3000/data">data</a>'
   );
 });
 
@@ -60,6 +67,12 @@ app.get("/inv", (_, res) => {
       '<a href="http://localhost:3000/inv/misc">misc</a>, ' +
       '<a href="http://localhost:3000/inv/junk">junk</a>, ' +
       '<a href="http://localhost:3000/inv/ammo">ammo</a>'
+  );
+});
+
+app.get("/data", (_, res) => {
+  res.send(
+    '<a href="http://localhost:3000/data/stats">stats</a>'
   );
 });
 
