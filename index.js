@@ -7,10 +7,10 @@ const callbackSpecial = require("./callbackSpecial");
 const callbackPerks = require("./callbackPerks");
 
 //special
-app.get("/special", callbackSpecial);
+app.get("/stat/special", callbackSpecial);
 
 //perks
-app.get("/perks", callbackPerks);
+app.get("/stat/perks", callbackPerks);
 
 //import tab inv
 const callbackWeapons = require("./callbackWeapons");
@@ -21,33 +21,45 @@ const callbackJunk = require("./callbackJunk");
 const callbackAmmo = require("./callbackAmmo");
 
 //weapons
-app.get("/weapons", callbackWeapons);
+app.get("/inv/weapons", callbackWeapons);
 
 //armor
-app.get("/apparel", callbackArmor);
+app.get("/inv/apparel", callbackArmor);
 
 //aids
-app.get("/aids", callbackAids);
+app.get("/inv/aids", callbackAids);
 
 //misc
-app.get("/misc", callbackMisc);
+app.get("/inv/misc", callbackMisc);
 
 //junk
-app.get("/junk", callbackJunk);
+app.get("/inv/junk", callbackJunk);
 
 //ammo
-app.get("/ammo", callbackAmmo);
+app.get("/inv/ammo", callbackAmmo);
 
 app.get("/", (_, res) => {
   res.send(
-      '<a href="http://localhost:3000/special">special</a>, ' +
-      '<a href="http://localhost:3000/perks">perks</a>, ' +
-      '<a href="http://localhost:3000/weapons">weapons</a>, ' +
-      '<a href="http://localhost:3000/apparel">armor</a>, ' +
-      '<a href="http://localhost:3000/aids">aids</a>, ' + 
-      '<a href="http://localhost:3000/misc">misc</a>, ' +
-      '<a href="http://localhost:3000/junk">junk</a>, ' +
-      '<a href="http://localhost:3000/ammo">ammo</a> '
+    '<a href="http://localhost:3000/stat/">stat</a>, ' +
+    '<a href="http://localhost:3000/inv">inv</a>'
+  );
+});
+
+app.get("/stat", (_, res) => {
+    res.send(
+      '<a href="http://localhost:3000/stat/special">special</a>, ' +
+      '<a href="http://localhost:3000/stat/perks">perks</a>'
+    );
+});
+
+app.get("/inv", (_, res) => {
+  res.send(
+      '<a href="http://localhost:3000/inv/weapons">weapons</a>, ' +
+      '<a href="http://localhost:3000/inv/apparel">armor</a>, ' +
+      '<a href="http://localhost:3000/inv/aids">aids</a>, ' + 
+      '<a href="http://localhost:3000/inv/misc">misc</a>, ' +
+      '<a href="http://localhost:3000/inv/junk">junk</a>, ' +
+      '<a href="http://localhost:3000/inv/ammo">ammo</a>'
   );
 });
 
