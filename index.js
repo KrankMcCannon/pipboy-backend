@@ -17,6 +17,7 @@ const callbackWeapons = require("./callbackWeapons");
 const callbackArmor = require("./callbackArmor");
 const callbackAids = require("./callbackAids");
 const callbackMisc = require("./callbackMisc");
+const callbackJunk = require("./callbackJunk");
 
 //weapons
 app.get("/weapons", callbackWeapons);
@@ -30,6 +31,9 @@ app.get("/aids", callbackAids);
 //misc
 app.get("/misc", callbackMisc);
 
+//junk
+app.get("/junk", callbackJunk);
+
 app.get("/", (_, res) => {
   res.send(
       '<a href="http://localhost:3000/special">special</a>, ' +
@@ -37,7 +41,8 @@ app.get("/", (_, res) => {
       '<a href="http://localhost:3000/weapons">weapons</a>, ' +
       '<a href="http://localhost:3000/apparel">armor</a>, ' +
       '<a href="http://localhost:3000/aids">aids</a>, ' + 
-      '<a href="http://localhost:3000/misc">misc</a>'
+      '<a href="http://localhost:3000/misc">misc</a>, ' +
+      '<a href="http://localhost:3000/junk">junk</a> '
   );
 });
 
