@@ -1,99 +1,99 @@
 const callbackWeapons = (req, res) => {
     const weapons = [];
     var w1 = {
-        "name": "10mm Pistol",
-        "damage": 18,
-        "ammo": 200,
-        "fire rate": 46,
-        "range": 83,
-        "accuracy": 60,
-        "weight": 3.5,
-        "value": 50
+        "Name": "10mm Pistol",
+        "Damage": 18,
+        "Ammo": 200,
+        "Rate": 46,
+        "Range": 83,
+        "Accuracy": 60,
+        "Weight": 3.5,
+        "Value": 50
     };
     var w2 = {
-        "name": "Baseball Bat",
-        "damage": 28,
-        "ammo": 200,
-        "speed": "SLOW",
-        "weight": 3,
-        "value": 25
+        "Name": "Baseball Bat",
+        "Damage": 28,
+        "Ammo": 200,
+        "Speed": "SLOW",
+        "Weight": 3,
+        "Value": 25
     };
     var w3 = {
-        "name": "Fat Man",
-        "damage": 468,
-        "ammo": 100,
-        "fire rate": 1,
-        "range": 117,
-        "accuracy": 63,
-        "weight": 30.7,
-        "value": 512
+        "Name": "Fat Man",
+        "Damage": 468,
+        "Ammo": 100,
+        "Rate": 1,
+        "Range": 117,
+        "Accuracy": 63,
+        "Weight": 30.7,
+        "Value": 512
     };
     var w4 = {
-        "name": "Fragmentation Mine",
-        "damage": 101,
-        "item": 6,
-        "fire rate": 0,
-        "range": 93,
-        "accuracy": 0,
-        "weight": 0.5,
-        "value": 50
+        "Name": "Fragmentation Mine",
+        "Damage": 101,
+        "Item": 6,
+        "Rate": 0,
+        "Range": 93,
+        "Accuracy": 0,
+        "Weight": 0.5,
+        "Value": 50
     };
     var w5 = {
-        "name": "Laser Musket",
-        "damage": 33,
-        "ammo": 100,
-        "fire rate": 6,
-        "range": 215,
-        "accuracy": 72,
-        "weight": 15.4,
-        "value": 73
+        "Name": "Laser Musket",
+        "Damage": 33,
+        "Ammo": 100,
+        "Rate": 6,
+        "Range": 215,
+        "Accuracy": 72,
+        "Weight": 15.4,
+        "Value": 73
     };
     var w6 = {
-        "name": "Machete",
-        "damage": 24,
-        "speed": "MEDIUM",
-        "weight": 2,
-        "value": 25
+        "Name": "Machete",
+        "Damage": 24,
+        "Speed": "MEDIUM",
+        "Weight": 2,
+        "Value": 25
     };
     var w7 = {
-        "name": "Minigun",
-        "damage": 8,
-        "ammo": 100,
-        "fire rate": 272,
-        "range": 131,
-        "accuracy": 35,
-        "weight": 27.4,
-        "value": 382
+        "Name": "Minigun",
+        "Damage": 8,
+        "Ammo": 100,
+        "Rate": 272,
+        "Range": 131,
+        "Accuracy": 35,
+        "Weight": 27.4,
+        "Value": 382
     };
     var w8 = {
-        "name": "Molotov Cocktail",
-        "damage": 162,
-        "item": 3,
-        "fire rate": 0,
-        "range": 93,
-        "accuracy": 0,
-        "weight": 0.5,
-        "value": 20
+        "Name": "Molotov Cocktail",
+        "Damage": 162,
+        "Item": 3,
+        "Rate": 0,
+        "Range": 93,
+        "Accuracy": 0,
+        "Weight": 0.5,
+        "Value": 20
     };
     var w9 = {
-        "name": "Pipe Bolt-Action Pistol",
-        "damage": 35,
-        "ammo": 100,
-        "fire rate": 2,
-        "range": 95,
-        "accuracy": 63,
-        "weight": 3.2,
-        "value": 30
+        "Name": "Pipe Bolt-Action Pistol",
+        "Damage": 35,
+        "Ammo": 100,
+        "Rate": 2,
+        "Range": 95,
+        "Accuracy": 63,
+        "Weight": 3.2,
+        "Value": 30
     };
     var w10 = {
-        "name": "Short Double-Barrel Shotgun",
-        "damage": 47,
-        "ammo": 100,
-        "fire rate": 36,
-        "range": 47,
-        "accuracy": 16,
-        "weight": 9,
-        "value": 39
+        "Name": "Short Double-Barrel Shotgun",
+        "Damage": 47,
+        "Ammo": 100,
+        "Rate": 36,
+        "Range": 47,
+        "Accuracy": 16,
+        "Weight": 9,
+        "Value": 39
     };
 
     weapons.push(w1, w2, w3, w4, w5, w6, w7, w8, w9, w10);
